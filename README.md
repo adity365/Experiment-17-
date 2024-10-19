@@ -9,6 +9,43 @@ A Linked List is a data structure in C++ that consists of a sequence of nodes, w
    
 Unlike arrays, linked lists don't have fixed sizes and can grow or shrink dynamically. Each element (or node) in a linked list is linked using pointers, allowing efficient insertions or deletions from any position.
 
+types of linked list :
+There are several types of linked lists, each with different structures and features. Here are the main types:
+
+### 1. **Singly Linked List**
+   - **Structure:** Each node contains data and a reference (or link) to the next node in the sequence.
+   - **Features:**
+     - Only forward traversal is possible.
+     - Simple and easy to implement.
+   - **Use Cases:** Implementing stacks, queues, and simple dynamic data structures.
+   
+   ```
+   Head -> Node1 -> Node2 -> Node3 -> Null
+   ```
+
+### 2. **Doubly Linked List**
+   - **Structure:** Each node contains data, a reference to the next node, and a reference to the previous node.
+   - **Features:**
+     - Allows traversal in both directions (forward and backward).
+     - More complex than a singly linked list due to extra pointers.
+   - **Use Cases:** Implementing complex data structures like dequeues or when you need bi-directional traversal.
+   
+   ```
+   Null <- Node1 <-> Node2 <-> Node3 -> Null
+   ```
+
+### 3. **Circular Linked List**
+   - **Structure:** Similar to a singly linked list, but the last node points back to the first node, forming a circular structure.
+   - **Features:**
+     - Can be traversed endlessly in a loop.
+     - Typically used in situations where the cycle of elements is essential.
+   - **Use Cases:** Implementing a circular queue, round-robin scheduling, or buffering systems.
+   
+   ```
+   Head -> Node1 -> Node2 -> Node3 -> Head
+   ```
+Each of these types serves different purposes based on the needs of your application, such as ease of traversal, memory efficiency, or circular traversal requirements.
+
 # CODE PERFORMED IN LAB :
 Experiment 17(a)
 ```
